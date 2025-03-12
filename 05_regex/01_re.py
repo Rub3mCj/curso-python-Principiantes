@@ -77,6 +77,13 @@ for match in matches:
 # EJERCICIO 02
 # Encuentra todas las ocurrencias de la palabra "midu" en el siguiente texto e indica en que posición empieza y termina cada coincidencia y cuantas veces se encontró.
 text = "Este es el curso de Python de midudev. ¡Suscríbete a midudev si te gusta este contenido! midu"
+pattern = "midu"
+
+matches = re.finditer (pattern, text)
+matchess = re.findall (pattern, text)
+
+for match in matches:
+  print("Hemos encontrado la palabra midu ",len(matchess),"veces, y empieza en la posicion",match.start(),"y termina en la posicion", match.end() )
 
 ### Modificadores
 
