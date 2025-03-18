@@ -46,7 +46,7 @@ print("\nPUT:")
 try:
   response = requests.put(
     "https://jsonplaceholder.typicode.com/posts/1",
-    json={
+    json_put={
       "title": "foo",
       "body": "bar",
       "userId": 1,
@@ -59,7 +59,7 @@ except requests.exceptions.RequestException as e:
 # Usar la API de GPT-4o de OpenAI
 # Ref: https://platform.openai.com/docs/api-reference/making-requests
 
-OPENAI_KEY = "sk-XXXXXXXX"
+OPENAI_KEY = "sk-xxx"
 
 import json
 
